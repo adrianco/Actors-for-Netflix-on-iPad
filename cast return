@@ -1,0 +1,121 @@
+{
+  "d" : {
+    "results" : [
+      {
+        "Id" : 13724,
+        "Awards" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(13724)/Awards"
+          }
+        },
+        "Name" : "James Cameron",
+        "TitlesActedIn" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(13724)/TitlesActedIn"
+          }
+        },
+        "__metadata" : {
+          "type" : "NetflixModel.Person",
+          "uri" : "http://odata.netflix.com/Catalog/People(13724)"
+        },
+        "TitlesDirected" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(13724)/TitlesDirected"
+          }
+        }
+      },
+      {
+        "Id" : 24260,
+        "Awards" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(24260)/Awards"
+          }
+        },
+        "Name" : "Leonardo DiCaprio",
+        "TitlesActedIn" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(24260)/TitlesActedIn"
+          }
+        },
+        "__metadata" : {
+          "type" : "NetflixModel.Person",
+          "uri" : "http://odata.netflix.com/Catalog/People(24260)"
+        },
+        "TitlesDirected" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(24260)/TitlesDirected"
+          }
+        }
+      },
+      {
+        "Id" : 89824,
+        "Awards" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(89824)/Awards"
+          }
+        },
+        "Name" : "Gloria Stuart",
+        "TitlesActedIn" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(89824)/TitlesActedIn"
+          }
+        },
+        "__metadata" : {
+          "type" : "NetflixModel.Person",
+          "uri" : "http://odata.netflix.com/Catalog/People(89824)"
+        },
+        "TitlesDirected" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(89824)/TitlesDirected"
+          }
+        }
+      },
+      {
+        "Id" : 102087,
+        "Awards" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(102087)/Awards"
+          }
+        },
+        "Name" : "Billy Zane",
+        "TitlesActedIn" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(102087)/TitlesActedIn"
+          }
+        },
+        "__metadata" : {
+          "type" : "NetflixModel.Person",
+          "uri" : "http://odata.netflix.com/Catalog/People(102087)"
+        },
+        "TitlesDirected" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(102087)/TitlesDirected"
+          }
+        }
+      },
+      {
+        "Id" : 30088841,
+        "Awards" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(30088841)/Awards"
+          }
+        },
+        "Name" : "Bob Michaels",
+        "TitlesActedIn" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(30088841)/TitlesActedIn"
+          }
+        },
+        "__metadata" : {
+          "type" : "NetflixModel.Person",
+          "uri" : "http://odata.netflix.com/Catalog/People(30088841)"
+        },
+        "TitlesDirected" : {
+          "__deferred" : {
+            "uri" : "http://odata.netflix.com/Catalog/People(30088841)/TitlesDirected"
+          }
+        }
+      }
+    ]
+  }
+}
