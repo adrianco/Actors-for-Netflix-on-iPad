@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -271,7 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>11</integer>
+									<integer>17</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -312,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Actors-Info.plist</string>
+								<string>ActorCell.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -320,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Actors-Info.plist</string>
+										<string>ActorCell.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8EE0169011BF7364001229E7</string>
+										<string>8EF678F111BF7A0200BCA8E7</string>
 										<key>history</key>
 										<array>
 											<string>8EA6A971117BC9AB00F0822F</string>
@@ -337,7 +339,6 @@
 											<string>8E29E16A11836C4A003CE0AF</string>
 											<string>8E29E16B11836C4A003CE0AF</string>
 											<string>8E29E16C11836C4A003CE0AF</string>
-											<string>8E29E16E11836C4A003CE0AF</string>
 											<string>8E29E17211836C4A003CE0AF</string>
 											<string>8E29E17511836C4A003CE0AF</string>
 											<string>8E29E17811836C4A003CE0AF</string>
@@ -364,7 +365,6 @@
 											<string>8EE0166711BF68BB001229E7</string>
 											<string>8EE0166811BF68BB001229E7</string>
 											<string>8EE0166911BF68BB001229E7</string>
-											<string>8EE0166A11BF68BB001229E7</string>
 											<string>8EE0168411BF7364001229E7</string>
 											<string>8EE0168511BF7364001229E7</string>
 											<string>8EE0168611BF7364001229E7</string>
@@ -376,7 +376,9 @@
 											<string>8EE0168C11BF7364001229E7</string>
 											<string>8EE0168D11BF7364001229E7</string>
 											<string>8EE0168E11BF7364001229E7</string>
-											<string>8EE0168F11BF7364001229E7</string>
+											<string>8EF678E211BF75AD00BCA8E7</string>
+											<string>8EF678EF11BF7A0200BCA8E7</string>
+											<string>8EF678F011BF7A0200BCA8E7</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -434,9 +436,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>8EE015CC11BF57A1001229E7</string>
+				<string>8EF678E511BF75AD00BCA8E7</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>8EE015CD11BF57A1001229E7</string>
+				<string>8EF678E611BF75AD00BCA8E7</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -574,11 +576,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>8EE0169111BF7364001229E7</string>
-		<string>8EE0169211BF7364001229E7</string>
+		<string>8EF678F911BF7A0200BCA8E7</string>
+		<string>8EF678FA11BF7A0200BCA8E7</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>8EA6A957117BB82100F0822F</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/acockcroft/Personal/actors/Actors-for-Netflix-on-iPad/Actors.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -603,7 +605,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MoviesViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -620,8 +622,6 @@
 							<string>222pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -661,7 +661,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>8EA6A957117BB82100F0822F</string>
-				<string>8EE015CE11BF57A1001229E7</string>
+				<string>8EF678E711BF75AD00BCA8E7</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -783,13 +783,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>8EE015CF11BF57A1001229E7</string>
+				<string>8EF678F211BF7A0200BCA8E7</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>8EE015D011BF57A1001229E7</string>
-				<string>8EE015D111BF57A1001229E7</string>
-				<string>8EE015D211BF57A1001229E7</string>
-				<string>8EE015D311BF57A1001229E7</string>
-				<string>8EE015D411BF57A1001229E7</string>
+				<string>8EF678F311BF7A0200BCA8E7</string>
+				<string>8EF678F411BF7A0200BCA8E7</string>
+				<string>8EF678F511BF7A0200BCA8E7</string>
+				<string>8EF678F611BF7A0200BCA8E7</string>
+				<string>8EF678F711BF7A0200BCA8E7</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -916,8 +916,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -953,7 +951,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>8EE015D511BF57A1001229E7</string>
+				<string>8EF678F811BF7A0200BCA8E7</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -963,7 +961,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
