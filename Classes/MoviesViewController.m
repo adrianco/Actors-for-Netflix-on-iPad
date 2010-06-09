@@ -12,6 +12,7 @@
 #import "Movie.h"
 #import "MovieCell.h"
 #import "MovieInfoViewController.h"
+#import "NetflixViewController.h"
 #import "CJSONDeserializer.h"
 #import "Actor.h"
 
@@ -22,6 +23,7 @@
 @synthesize movies;
 @synthesize gridView;
 @synthesize networkQueue;
+@synthesize netflixButton;
 
 
 - (void)viewDidLoad;
@@ -32,6 +34,7 @@
 	gridView.rightContentInset = 60.f;
 	
 	navBar.topItem.title = self.title;
+	navBar.topItem.rightBarButtonItem.title = [NSString stringWithFormat:@"%@ - Delivered by Netflix", actor.name];
 }
 
 - (void)setActor:(Actor *)value
@@ -42,7 +45,7 @@
 	
 	self.title = [NSString stringWithFormat:@"Movies with %@", actor.name];
 	navBar.topItem.title = self.title;
-	
+	navBar.topItem.rightBarButtonItem.title = [NSString stringWithFormat:@"%@ - Delivered by Netflix", actor.name];
 	page = 0;
 	[self requestActorPage]; // get the first page of 20 movies
 	[gridView reloadData];
@@ -189,6 +192,14 @@
 {
 	[networkQueue cancelAllOperations];
 	[self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)netflix
+{
+	//NSLog(@"Actor ident %@", actor.identifier);
+	NetflixViewController *web = [[NetflixViewController alloc] initWithUrlString:[NSString stringWithFormat:@"http://www.netflix.com/RoleDisplay/%@", actor.identifier]];
+	web.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+	[self presentModalViewController:web animated:YES];
 }
 
 - (NSUInteger) numberOfItemsInGridView: (AQGridView *) gridView;

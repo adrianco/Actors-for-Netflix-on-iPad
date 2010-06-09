@@ -12,6 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
+			<integer value="8"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -37,7 +38,7 @@
 				<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 			</object>
 			<object class="IBUIView" id="766721923">
-				<nil key="NSNextResponder"/>
+				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -52,7 +53,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="705966682">
 								<reference key="IBUINavigationBar" ref="725378743"/>
-								<string key="IBUITitle">Netflix</string>
+								<string key="IBUITitle">Actors for Netflix</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="259179267">
 									<string key="IBUITitle">Back</string>
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -60,7 +61,7 @@
 									<reference key="IBUINavigationItem" ref="705966682"/>
 								</object>
 								<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="933472807">
-									<string key="IBUITitle">Free Trial</string>
+									<string key="IBUITitle">Netflix Free Trial</string>
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
 									<int key="IBUIStyle">1</int>
 									<reference key="IBUINavigationItem" ref="705966682"/>
@@ -72,7 +73,7 @@
 					<object class="IBUIWebView" id="253421266">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{0, 44}, {768, 916}}</string>
+						<string key="NSFrame">{{0, 44}, {768, 960}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -82,7 +83,8 @@
 						<bool key="IBUIScalesPageToFit">YES</bool>
 					</object>
 				</object>
-				<string key="NSFrameSize">{768, 960}</string>
+				<string key="NSFrameSize">{768, 1004}</string>
+				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -233,7 +235,7 @@
 					<string>NetflixViewController</string>
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{540, -37}, {635, 685}}</string>
+					<string>{{497, 4}, {783, 752}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

@@ -86,7 +86,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUINavigationItem" id="258082471">
 								<reference key="IBUINavigationBar" ref="381267059"/>
-								<string key="IBUITitle">Actors</string>
+								<string key="IBUITitle">Actors for Netflix</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="978250664">
 									<string key="IBUITitle">Delivered by Netflix</string>
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -292,7 +292,7 @@
 					<string>AQGridView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{-77, 4}, {1039, 752}}</string>
+					<string>{{0, 4}, {1039, 752}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>

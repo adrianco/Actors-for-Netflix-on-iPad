@@ -272,9 +272,11 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Overriden to allow any orientation.
-    return YES;
+    // Override to allow any orientation.
+    // return YES;
 	// this view needs fixing for portrait, but movies play better landscape as well
+	return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
+			interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
 
 

@@ -25,6 +25,7 @@
 	Actor *actor;
 	
 	UINavigationBar *navBar;
+	UIBarButtonItem *netflixButton;
 	
 	NSArray *movies;
 	
@@ -32,12 +33,14 @@
 }
 
 @property (retain) IBOutlet UINavigationBar *navBar;
+@property (nonatomic, retain) IBOutlet UIBarButtonItem *netflixButton;
 @property (retain) Actor *actor;
 @property (copy) NSArray *movies;
 @property (retain) AQGridView *gridView;
 @property (retain) ASINetworkQueue *networkQueue;
 
 - (IBAction)back;
+- (IBAction)netflix;
 
 // forward definitions to make code more readable
 - (void)requestActorPage;

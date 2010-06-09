@@ -35,6 +35,7 @@
 
 NSInteger alphaSortPerson(id p1, id p2, void *context)
 {
+	// Try to sort by last name, excluding the Jr. that occurs in places
 	Actor *a1 = p1;
 	Actor *a2 = p2;
 	NSString *n1 = [[[a1.name stringByReplacingOccurrencesOfString:@" Jr." withString:@""]
@@ -68,6 +69,7 @@ NSInteger alphaSortPerson(id p1, id p2, void *context)
 		[muta addObject:actor];
 	}
 	
+	// not very elegant but it works
 	NSRange sortRange;
 	sortRange.location = 0;
 	sortRange.length = [muta count];
@@ -125,16 +127,36 @@ NSInteger alphaSortPerson(id p1, id p2, void *context)
 
 - (IBAction)search
 {
-	UIActionSheet *actionAlert = [[UIActionSheet alloc] initWithTitle:@"Not yet implemented"
+	UIActionSheet *actionAlert = [[UIActionSheet alloc] initWithTitle:@"Menu"
 															 delegate:self
-													cancelButtonTitle:@"Cancel"
+													cancelButtonTitle:nil
 											   destructiveButtonTitle:nil
-													otherButtonTitles:nil];
+													otherButtonTitles:@"Credits", @"Help Wiki at GitHub", nil];
 	[actionAlert showInView:[self view]];
 	[actionAlert release];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheetView clickedButtonAtIndex:(NSInteger)alertButtonIndex {
+	switch (alertButtonIndex) {
+		case 0: { // Credits popup	
+			UIActionSheet *actionAlert = [[UIActionSheet alloc] initWithTitle:@"Credits\n\nThanks to Netflix for the API and the Movies\nthe iPadDevCamp for Inspiration\nAndrew Pouliot for most of the code\nKirsten Jones for OData and the queries\nJim Dovey for AQGridView\nAdrian Cockcroft for product concept, debug and final production\n\n"
+																	 delegate:self
+															cancelButtonTitle:nil
+													   destructiveButtonTitle:nil
+															otherButtonTitles:nil];
+			[actionAlert showInView:[self view]];
+			[actionAlert release];
+			break;
+		}
+		case 1: { // Visit the Help Wiki
+			NetflixViewController *web = [[NetflixViewController alloc] initWithUrlString:@"http://wiki.github.com/adrianco/Actors-for-Netflix-on-iPad/"];
+			web.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+			[self presentModalViewController:web animated:YES];
+			break;
+		}
+		default:
+			break;
+	}
 	return;
 }
 
