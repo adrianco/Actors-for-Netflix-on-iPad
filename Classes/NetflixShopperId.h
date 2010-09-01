@@ -27,5 +27,6 @@
 // these functions can be accessed by an ephemeral instance
 - (NSString *)getShopperId;	// return the id if we have one persisted
 - (void)setShopperId:(NSString *)sid; // change the persisted id
-
+- (NSString *)getNetflixId;	// return the id if we have one persisted
+- (void)setNetflixId:(NSString *)nid; // change the persisted id
 @end

@@ -11,6 +11,7 @@
 #import "ASINetworkQueue.h"
 
 #define SHOPKEY @"NFLX_SHOPPERID"
+#define NETFLIXKEY @"NFLX_NETFLIXID"
 
 @implementation NetflixShopperId
 
@@ -19,9 +20,10 @@
 
 // shopperId is an authentication token found in the Netflix website cookie.
 // if a user logs out and back in, their shopperId will change, so check it each time
+// NetflixId is a more recent authentication cookie
 - (void) obtainShopperIdWithAsyncRequest {
-	//NSLog(@"Loading shopperid from http://www.netflix.com/WiHome");
-	NSURL *webUrl = [NSURL URLWithString:@"http://www.netflix.com/WiHome"];
+	//NSLog(@"Loading netflixid and shopperid from https://www.netflix.com/YourAccount");
+	NSURL *webUrl = [NSURL URLWithString:@"https://www.netflix.com/YourAccount"];
 	[networkQueue cancelAllOperations];
 	networkQueue = [ASINetworkQueue queue];
 	[networkQueue retain];
@@ -38,10 +40,11 @@
 	//NSLog(@"NetflixShopperId async request succeeded");
 	NSArray *cookies = [request responseCookies];
 	for(NSHTTPCookie *oneCookie in cookies) {
+		NSLog(@"Cookie %@ = %@", [oneCookie name], [oneCookie value]);
 		if ([@"NetflixShopperId" isEqualToString:[oneCookie name]]) {
 			[self setShopperId:[oneCookie value]];
-			//NSLog(@"NetflixShopperId from cookie = %@", [oneCookie value]);
-			break;
+		} else if ([@"NetflixId" isEqualToString:[oneCookie name]]) {
+			[self setNetflixId:[oneCookie value]];
 		}
 	}
 }
@@ -64,6 +67,16 @@
 - (void)setShopperId:(NSString *)sid
 {
 	[[NSUserDefaults standardUserDefaults] setObject:sid forKey:SHOPKEY];
+}
+
+- (NSString *)getNetflixId
+{
+	return [[NSUserDefaults standardUserDefaults] stringForKey:NETFLIXKEY];
+}
+
+- (void)setNetflixId:(NSString *)nid
+{
+	[[NSUserDefaults standardUserDefaults] setObject:nid forKey:NETFLIXKEY];
 }
 
 - (void)dealloc {
